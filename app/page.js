@@ -19,7 +19,6 @@ export default function Home() {
       { role: "assistant", content: "" },
     ]);
 
-    console.log("WE GOT TO THIS PART");
     const response = await fetch("api/chat", {
       method: "POST",
       headers: {
@@ -30,9 +29,6 @@ export default function Home() {
 
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
-
-    console.log("WE GOT TO THIS PART 2");
-    console.log(response);
 
     return reader.read().then(function processText({ done, value }) {
       if (done) {

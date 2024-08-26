@@ -43,8 +43,6 @@ Use this structured approach to ensure that users receive the most relevant and 
 
 export async function POST(req) {
   try {
-    console.log("PASSED THE PINECONE INITIALIZATION STEP");
-
     const pc = new Pinecone({
       apiKey: process.env.PINECONE_API_KEY,
     });
@@ -57,10 +55,8 @@ export async function POST(req) {
 
     const data = await req.json();
 
-    console.log("THIS IS IN ROUTE.JS FIRST DEBUGGING PART");
-
     const mxbai = new MixedbreadAIClient({
-      apiKey: process.env.MIXEDBREAD_API_KEY,
+      apiKey: `${process.env.MIXEDBREAD_API_KEY}`,
     });
 
     const text = data[data.length - 1].content;
@@ -94,17 +90,16 @@ export async function POST(req) {
     const lastMessageContent = lastMessage.content + resultString;
     const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
 
-    const completion = await openai.completions.create({
+    const completion = await openai.chat.completions.create({
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: lastMessageContent },
         ...lastDataWithoutLastMessage,
       ],
-      model: "gpt-3.5-turbo",
+      model: "openai/gpt-3.5-turbo",
     });
 
-    console.log("SUCCESSSSSSSSSSS");
-    return new NextResponse(completion.data.choices[0].message.content);
+    return new NextResponse(completion.choices[0].message.content);
   } catch (error) {
     console.error("Error in API route:", error);
     return new NextResponse("Internal Server Error", { status: 500 });

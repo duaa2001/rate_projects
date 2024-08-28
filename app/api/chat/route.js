@@ -79,12 +79,14 @@ export async function POST(req) {
     results.matches.forEach((match) => {
       resultString += `
         Returned Results:
-        Professor: ${match.id}
-        Review: ${match.metadata.stars}
-        Subject: ${match.metadata.subject}
+        name: ${match.id}
+        Skills: ${match.metadata.skills}
         Stars: ${match.metadata.stars}
+        Comments: ${match.metadata.review}
         \n\n`;
+      675;
     });
+
 
     const lastMessage = data[data.length - 1];
     const lastMessageContent = lastMessage.content + resultString;

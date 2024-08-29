@@ -1,131 +1,146 @@
 {
-    "reviews": [
-      {
-        "name": "Alice Johnson",
-        "skills": "Python, Data Analysis",
-        "stars": 5,
-        "comments": "This project was exceptionally well done. The code is clean, and the analysis is insightful."
-      },
-      {
-        "name": "Bob Smith",
-        "skills": "JavaScript, React",
-        "stars": 4,
-        "comments": "Solid project with great attention to detail, but the UI could use some enhancements."
-      },
-      {
-        "name": "Carol Williams",
-        "skills": "Java, Spring Boot",
-        "stars": 4,
-        "comments": "The backend logic is strong, but there are some issues with error handling."
-      },
-      {
-        "name": "David Brown",
-        "skills": "C++, Embedded Systems",
-        "stars": 5,
-        "comments": "Impressive work, especially in optimizing for performance. Very well done!"
-      },
-      {
-        "name": "Eva Green",
-        "skills": "HTML, CSS, UX Design",
-        "stars": 3,
-        "comments": "The design is visually appealing, but the responsiveness needs improvement."
-      },
-      {
-        "name": "Frank Harris",
-        "skills": "Ruby on Rails, SQL",
-        "stars": 5,
-        "comments": "Excellent use of Rails for a clean and efficient web application."
-      },
-      {
-        "name": "Grace Lewis",
-        "skills": "Node.js, MongoDB",
-        "stars": 4,
-        "comments": "The project is well-structured, but some database queries could be optimized."
-      },
-      {
-        "name": "Henry Clark",
-        "skills": "PHP, Laravel",
-        "stars": 3,
-        "comments": "Good effort, but there are some issues with security that need to be addressed."
-      },
-      {
-        "name": "Isabella Young",
-        "skills": "Python, Machine Learning",
-        "stars": 5,
-        "comments": "Outstanding project! The machine learning model is well-tuned and effective."
-      },
-      {
-        "name": "Jack Martinez",
-        "skills": "Go, Microservices",
-        "stars": 4,
-        "comments": "Great implementation of microservices, but the documentation could be more detailed."
-      },
-      {
-        "name": "Karen Adams",
-        "skills": "Swift, iOS Development",
-        "stars": 5,
-        "comments": "Beautifully designed app with seamless functionality. Highly impressive!"
-      },
-      {
-        "name": "Liam Nelson",
-        "skills": "C#, ASP.NET",
-        "stars": 4,
-        "comments": "The application is robust, but there are a few bugs that need fixing."
-      },
-      {
-        "name": "Mia Lopez",
-        "skills": "Python, Django",
-        "stars": 5,
-        "comments": "Fantastic project with a solid structure and great use of Django's features."
-      },
-      {
-        "name": "Noah Walker",
-        "skills": "JavaScript, Angular",
-        "stars": 3,
-        "comments": "The project is functional, but the code could be refactored for better readability."
-      },
-      {
-        "name": "Olivia Scott",
-        "skills": "Java, Android Development",
-        "stars": 4,
-        "comments": "Well-executed app, but some features could be made more intuitive."
-      },
-      {
-        "name": "Paul White",
-        "skills": "Kotlin, Android Development",
-        "stars": 5,
-        "comments": "Excellent use of Kotlin with a smooth and responsive UI."
-      },
-      {
-        "name": "Quinn Baker",
-        "skills": "Python, Data Science",
-        "stars": 5,
-        "comments": "Insightful analysis and great presentation of data. Highly informative!"
-      },
-      {
-        "name": "Rachel Lee",
-        "skills": "JavaScript, Vue.js",
-        "stars": 4,
-        "comments": "Solid project, but some components could be better optimized."
-      },
-      {
-        "name": "Sam Carter",
-        "skills": "C++, Game Development",
-        "stars": 5,
-        "comments": "Fantastic game with smooth gameplay and impressive graphics."
-      },
-      {
-        "name": "Tina Evans",
-        "skills": "Python, Web Scraping",
-        "stars": 4,
-        "comments": "Effective scraping solution, but could improve in handling edge cases."
-      },
-      {
-        "name": "Umar Patel",
-        "skills": "SQL, Database Management",
-        "stars": 5,
-        "comments": "Exceptional database design with efficient query performance. Great job!"
-      }
-    ]
-  }
+  "reviews": [
+    {
+      "title": "Inception",
+      "genre": "Sci-Fi, Thriller",
+      "stars": 5,
+      "reviewer": "Alice Johnson",
+      "comments": "Mind-bending and visually stunning. A masterpiece by Christopher Nolan."
+    },
+    {
+      "title": "The Dark Knight",
+      "genre": "Action, Crime, Drama",
+      "stars": 5,
+      "reviewer": "Bob Smith",
+      "comments": "A brilliant portrayal of Batman. Heath Ledger's Joker is unforgettable."
+    },
+    {
+      "title": "Interstellar",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "stars": 4,
+      "reviewer": "Carol Williams",
+      "comments": "A visually impressive journey through space, but the plot can be a bit complex."
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "stars": 5,
+      "reviewer": "David Brown",
+      "comments": "A timeless story of hope and friendship. One of the best films ever made."
+    },
+    {
+      "title": "The Godfather",
+      "genre": "Crime, Drama",
+      "stars": 5,
+      "reviewer": "Eva Green",
+      "comments": "A cinematic masterpiece with powerful performances and a gripping story."
+    },
+    {
+      "title": "Pulp Fiction",
+      "genre": "Crime, Drama",
+      "stars": 4,
+      "reviewer": "Frank Harris",
+      "comments": "Quentin Tarantino's unique style shines through in this iconic film."
+    },
+    {
+      "title": "The Matrix",
+      "genre": "Action, Sci-Fi",
+      "stars": 5,
+      "reviewer": "Grace Lewis",
+      "comments": "A groundbreaking sci-fi film with mind-bending concepts and action."
+    },
+    {
+      "title": "Fight Club",
+      "genre": "Drama",
+      "stars": 4,
+      "reviewer": "Henry Clark",
+      "comments": "A thought-provoking film with a twist ending that leaves a lasting impact."
+    },
+    {
+      "title": "Forrest Gump",
+      "genre": "Drama, Romance",
+      "stars": 5,
+      "reviewer": "Isabella Young",
+      "comments": "A heartwarming story with a stellar performance by Tom Hanks."
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre": "Adventure, Drama, Fantasy",
+      "stars": 5,
+      "reviewer": "Jack Martinez",
+      "comments": "A visually stunning epic with a rich story and memorable characters."
+    },
+    {
+      "title": "The Social Network",
+      "genre": "Biography, Drama",
+      "stars": 4,
+      "reviewer": "Karen Adams",
+      "comments": "A fascinating look at the creation of Facebook with sharp dialogue."
+    },
+    {
+      "title": "Gladiator",
+      "genre": "Action, Adventure, Drama",
+      "stars": 5,
+      "reviewer": "Liam Nelson",
+      "comments": "A thrilling epic with powerful performances and stunning visuals."
+    },
+    {
+      "title": "The Lion King",
+      "genre": "Animation, Adventure, Drama",
+      "stars": 5,
+      "reviewer": "Mia Lopez",
+      "comments": "A beautifully animated film with a timeless story and unforgettable music."
+    },
+    {
+      "title": "Back to the Future",
+      "genre": "Adventure, Comedy, Sci-Fi",
+      "stars": 5,
+      "reviewer": "Noah Walker",
+      "comments": "A fun and innovative time-travel adventure that stands the test of time."
+    },
+    {
+      "title": "Titanic",
+      "genre": "Drama, Romance",
+      "stars": 5,
+      "reviewer": "Olivia Scott",
+      "comments": "A tragic love story set against the backdrop of an epic historical event."
+    },
+    {
+      "title": "The Avengers",
+      "genre": "Action, Adventure, Sci-Fi",
+      "stars": 4,
+      "reviewer": "Paul White",
+      "comments": "A superhero extravaganza with great action sequences and humor."
+    },
+    {
+      "title": "Jurassic Park",
+      "genre": "Action, Adventure, Sci-Fi",
+      "stars": 5,
+      "reviewer": "Quinn Baker",
+      "comments": "A thrilling adventure with groundbreaking special effects and suspense."
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "genre": "Crime, Drama, Thriller",
+      "stars": 5,
+      "reviewer": "Rachel Lee",
+      "comments": "A chilling thriller with unforgettable performances and a gripping story."
+    },
+    {
+      "title": "Saving Private Ryan",
+      "genre": "Drama, War",
+      "stars": 5,
+      "reviewer": "Sam Carter",
+      "comments": "A powerful war film with intense battle scenes and emotional depth."
+    },
+    {
+      "title": "Schindler's List",
+      "genre": "Biography, Drama, History",
+      "stars": 5,
+      "reviewer": "Tina Evans",
+      "comments": "A haunting and deeply moving film about one of history's darkest periods."
+    }
+  ]
+}
+
   

@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Stack, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 
 export default function Home() {
@@ -54,21 +54,36 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      bgcolor="#282c34"
     >
+      <Typography
+        variant="h3"
+        color="#FF5722" // Vibrant color for the title
+        fontWeight="bold"
+        mb={3}
+        textAlign="center"
+        letterSpacing={2}
+        textTransform="uppercase"
+      >
+        Movie Box
+      </Typography>
       <Stack
-        direction={"column"}
+        direction="column"
         width="500px"
         height="700px"
-        border="1px solid black"
-        p={2}
+        borderRadius={12}
+        p={3}
         spacing={3}
+        bgcolor="#1C1C1C" // Darker black for contrast
+        boxShadow="0px 6px 30px rgba(0, 0, 0, 0.7)" // More pronounced shadow for depth
       >
         <Stack
-          direction={"column"}
+          direction="column"
           spacing={2}
           flexGrow={1}
           overflow="auto"
           maxHeight="100%"
+          pr={1}
         >
           {messages.map((message, index) => (
             <Box
@@ -80,31 +95,55 @@ export default function Home() {
             >
               <Box
                 bgcolor={
-                  message.role === "assistant"
-                    ? "primary.main"
-                    : "secondary.main"
+                  message.role === "assistant" ? "#FFC107" : "#d3d3d3" // Lighter, vibrant colors for chat bubbles
                 }
                 color="white"
                 borderRadius={16}
-                p={3}
+                p={2}
+                maxWidth="75%"
+                boxShadow="0px 4px 12px rgba(0, 0, 0, 0.3)"
               >
                 {message.content}
               </Box>
             </Box>
           ))}
         </Stack>
-        <Stack direction={"row"} spacing={2}>
+        <Stack direction="row" spacing={2}>
           <TextField
+            variant="outlined"
             label="Message"
             fullWidth
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            InputLabelProps={{
+              style: { color: '#9e9e9e' },
+            }}
+            InputProps={{
+              style: {
+                color: 'white',
+                backgroundColor: '#333333',
+                borderRadius: 8,
+              },
+            }}
           />
-          <Button variant="contained" onClick={sendMessage}>
+          <Button 
+            variant="contained" 
+            onClick={sendMessage}
+            sx={{
+              bgcolor: "#FF4081", // Pinkish color for the send button
+              color: "white",
+              '&:hover': {
+                bgcolor: "#F50057", // Darker shade on hover
+              },
+              borderRadius: 8,
+              padding: '8px 24px', // Slightly larger button
+            }}
+          >
             Send
           </Button>
         </Stack>
       </Stack>
     </Box>
-  );
+  );  
+  
 }
